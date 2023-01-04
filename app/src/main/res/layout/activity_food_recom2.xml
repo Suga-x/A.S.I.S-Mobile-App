@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodRecom2Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <!-- Vector -->
+        <ImageView
+            android:id="@+id/vector"
+            android:layout_width="16dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/backpink_vektor" />
+
+        <!-- Rectangle 282 -->
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="274dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/seacrh_vektor" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/potato_vektor" />
+
+        <View
+            android:id="@+id/rectangle_8"
+            android:layout_width="335px"
+            android:layout_marginStart="-6dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/foodrecomendation_vektor" />
+        <View
+            android:id="@+id/rectangle_81"
+            android:layout_width="335px"
+            android:layout_marginStart="-6dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/foodrecomendation_vektor" />
+
+        <!-- Potato -->
+        <TextView
+            android:id="@+id/Potato"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="159dp"
+            android:gravity="top"
+            android:text="Potato Wedges"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <!-- salad -->
+        <TextView
+            android:id="@+id/salad"
+            android:layout_width="118dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="190dp"
+            android:gravity="top"
+            android:fontFamily="@font/poppins"
+            android:text="With salad"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundpink"
+            android:text="All"
+            android:backgroundTint="@color/pinkFood"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="106dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/backgroundpink"
+            android:text="Favorite"
+            android:textColor="@color/pinkFood"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/backgroundpink"
+            android:text="Appetizer"
+            android:textColor="@color/pinkFood"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/backgroundpink"
+            android:text="Main course"
+            android:textColor="@color/pinkFood"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/bowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/smotie_vektor" />
+
+                <View
+                    android:id="@+id/rectangle_9"
+                    android:layout_width="335px"
+                    android:layout_marginStart="-6dp"
+                    android:layout_height="126dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="94dp"
+                    android:background="@drawable/foodrecomendation_vektor" />
+                <View
+                    android:id="@+id/rectangle_91"
+                    android:layout_width="335px"
+                    android:layout_marginStart="-6dp"
+                    android:layout_height="126dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="94dp"
+                    android:background="@drawable/foodrecomendation_vektor" />
+
+                <!-- Potato -->
+                <TextView
+                    android:id="@+id/SmoothiesBowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="144dp"
+                    android:gravity="top"
+                    android:text="Smoothies Bowl"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <!-- salad -->
+                <TextView
+                    android:id="@+id/selengkapnya"
+                    android:layout_width="217dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="178dp"
+                    android:gravity="top"
+                    android:fontFamily="@font/poppins"
+                    android:text="Smoothies lengkap dengan buah-buahan asli, cocok untuk menu diet"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jenisDua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/buburSehat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bubur_vektor" />
+
+                <View
+                    android:id="@+id/rectangle_10"
+                    android:layout_width="335px"
+                    android:layout_height="126dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="94dp"
+                    android:layout_marginStart="-6dp"
+                    android:background="@drawable/foodrecomendation_vektor" />
+                <View
+                    android:id="@+id/rectangle_101"
+                    android:layout_width="335px"
+                    android:layout_height="126dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="94dp"
+                    android:layout_marginStart="-6dp"
+                    android:background="@drawable/foodrecomendation_vektor" />
+
+                <!-- Potato -->
+                <TextView
+                    android:id="@+id/bubur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="144dp"
+                    android:gravity="top"
+                    android:text="Bubur supermie"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <!-- salad -->
+                <TextView
+                    android:id="@+id/selengkapnyaDua"
+                    android:layout_width="217dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="178dp"
+                    android:gravity="top"
+                    android:fontFamily="@font/poppins"
+                    android:text="Smoothies lengkap dengan buah-buahan asli, cocok untuk menu diet"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

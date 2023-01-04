@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeedsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_1"
+        android:layout_width="360dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/needshome"
+        app:cardBackgroundColor="@color/cyanWorkout"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Work -->
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="33dp"
+            android:gravity="center_horizontal|top"
+            android:text="Work"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="84dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="56dp"
+            android:gravity="center_horizontal|top"
+            android:text="Out"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <!-- yoga-practice/pana -->
+        <ImageView
+            android:id="@+id/yoga_practi"
+            android:layout_width="258.08dp"
+            android:layout_height="131.24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="109dp"
+            android:layout_marginTop="115dp"
+            android:background="#00000000"
+            android:src="@drawable/wo_vektor" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_"
+        android:layout_width="360dp"
+        android:layout_height="246dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/needshome"
+        app:cardBackgroundColor="@color/pinkFood"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1">
+
+        <!-- Healthy -->
+
+        <!-- Food -->
+        <TextView
+            android:id="@+id/healthy"
+            android:layout_width="109dp"
+            android:layout_height="41dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="218dp"
+            android:layout_marginTop="55dp"
+            android:text="Healthy"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="113dp"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="217dp"
+            android:layout_marginTop="83dp"
+            android:text="Food"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <!-- pasta/pana -->
+        <ImageView
+            android:id="@+id/pasta_pana"
+            android:layout_width="141dp"
+            android:layout_height="146.33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="100.41dp"
+            android:background="#00000000"
+            android:src="@drawable/food_vektor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_4"
+        android:layout_width="360dp"
+        android:layout_height="246dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/needshome"
+        app:cardBackgroundColor="@color/kuningVacation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_">
+
+        <!-- Holi -->
+        <TextView
+            android:id="@+id/holi"
+            android:layout_width="89dp"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="57dp"
+            android:gravity="top"
+            android:text="Holi"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <!-- Day -->
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="92dp"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="95dp"
+            android:gravity="top"
+            android:text="Day"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <!-- trip/pana -->
+        <ImageView
+            android:id="@+id/trip_pana"
+            android:layout_width="175.36dp"
+            android:layout_height="154.99dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="169.47dp"
+            android:layout_marginTop="91dp"
+            android:background="#00000000"
+            android:src="@drawable/holi_vektor" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

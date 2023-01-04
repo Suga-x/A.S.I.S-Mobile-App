@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilActivity">
+
+
+    <TextView
+        android:id="@+id/profil_keluar"
+        android:layout_width="102dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="129dp"
+        android:background="@drawable/profil_keluar"
+        android:text="Keluar"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_1"
+        android:layout_width="328dp"
+        android:layout_height="227dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/biruWork"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profilUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/profil_user" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="43dp"
+            android:text="Sandy"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="63dp"
+            android:text="24"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="93dp"
+            android:text="Karyawan | Mahasiswa"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="153dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:scrollbarSize="0dp"
+            android:text="Height"
+            android:textColor="@color/biruWork"
+            android:textSize="13dp"
+            app:cornerRadius="10dp"
+            app:iconPadding="0dp" />
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="191dp"
+            android:text="/cm"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tinggiBadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="185dp"
+            android:text="190"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="153dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Weight"
+            android:textColor="@color/biruWork"
+            android:textSize="13dp"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/beratBadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="185dp"
+            android:text="45"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="191dp"
+            android:text="/kg"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Edit Profile"
+            android:textColor="@color/biruWork"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_2"
+        android:layout_width="328dp"
+        android:layout_height="93dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/cyanWorkout"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1">
+
+        <TextView
+            android:id="@+id/historysrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="51dp"
+            android:layout_marginStart="29dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="-14dp"
+            android:rotationY="0"
+            android:src="@drawable/history_vektor" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_3"
+        android:layout_width="328dp"
+        android:layout_height="93dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/profil_historysrc"
+        android:backgroundTint="@color/kuningVacation"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2">
+
+        <TextView
+            android:id="@+id/notificationSrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="51dp"
+            android:layout_marginStart="29dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="214dp"
+            android:layout_marginBottom="-12dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/bell_vektor" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

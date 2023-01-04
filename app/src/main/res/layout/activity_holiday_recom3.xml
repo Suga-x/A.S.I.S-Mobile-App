@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HolidayRecom3Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gunungBromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bromolike"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backyellow2"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favoriteyellow_ikon"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="281dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/opacity_rectangel"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/opacity_rectangel"/>
+
+        <!-- Gunung Bromo -->
+        <TextView
+            android:id="@+id/gunung_brom"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="189dp"
+            android:text="Gunung Bromo"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/jawaTimur"
+            android:layout_width="193dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="227dp"
+            android:text="Jawa Timur"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:gravity="top"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunungBromo" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="331dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:justificationMode="inter_word"
+        android:text="Gunung Bromo memiliki ketinggian 2.329 mdpl dan dipercaya sebagai gunung suci oleh umat hindu tengger. Nama Bromo sendiri diambil dari kata “Brahma” bahasa sanskerta yaitu dewa pertama agama hindu. Yang menarik dari gunung ini adalah bentuknya yang bertautan antara lembah dan ngarai dengan lautan pasir yang memiliki luas 10 km persegi. Berikut ini adalah informasi yang perlu Anda ketahui tentang objek wisata gunung bromo jawa timur. "
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:lineSpacingExtra="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="What’s On Bromo"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/bromokonten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/bromokonten2"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

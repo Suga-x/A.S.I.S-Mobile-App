@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".historyActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="History"
+        android:textColor="@color/cyanWorkout"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tue"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/wed"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/thu"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fri"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="96dp"
+        android:text="mod"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/sat"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/complete_missed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mon" />
+
+    <!-- Rectangle 211 -->
+    <View
+        android:id="@+id/missed"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/missed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

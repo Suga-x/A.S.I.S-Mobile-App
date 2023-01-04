@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutRecomActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <!-- Vector -->
+        <ImageView
+            android:id="@+id/vector"
+            android:layout_width="16dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/backgreen_vektor" />
+
+        <!-- Rectangle 282 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/rectangle_2"
+                android:layout_width="274dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/searchworkout" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="21dp"
+                android:src="@drawable/searchgreen_ikon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/closegreen_ikon"
+                android:layout_marginLeft="263dp"
+                android:layout_marginTop="32dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginTop="33dp"
+                android:background="@color/cyanWorkout"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginEnd="-16dp"
+                app:srcCompat="@drawable/yoga_vektor" />
+
+            <!-- Potato -->
+            <TextView
+                android:id="@+id/Choose"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="44dp"
+                android:text="Choose"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <!-- salad -->
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="118dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="top"
+                android:text="Your Work"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            android:text="All"
+            android:backgroundTint="@color/cyanWorkout"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="106dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/backgroundhijau"
+            android:text="Favorite"
+            android:textColor="@color/cyanWorkout"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:paddingHorizontal="24dp"
+            android:background="@drawable/backgroundhijau"
+            android:text="10 menit"
+            android:textColor="@color/cyanWorkout"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/backgroundhijau"
+            android:text="Populer"
+            android:textColor="@color/cyanWorkout"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yogaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/bowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/yogapractice_image" />
+
+                <!-- Potato -->
+
+                <View
+                    android:id="@+id/rectangle_9"
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+                <View
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+                <View
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+
+                <TextView
+                    android:id="@+id/SmoothiesBowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="127dp"
+                    android:gravity="top"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="15 Minutes"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <!-- salad -->
+                <TextView
+                    android:id="@+id/selengkapnya"
+                    android:layout_width="217dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:gravity="top"
+                    android:fontFamily="@font/poppins"
+                    android:text="Energizing Yoga Flow"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jenisWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/imageWo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/yogapractice_image" />
+
+                <!-- Potato -->
+
+                <View
+                    android:id="@+id/rectangle_10"
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+                <View
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+                <View
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/opacitygreen_vektor" />
+
+                <TextView
+                    android:id="@+id/minutes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="127dp"
+                    android:gravity="top"
+                    android:text="15 Minutes"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <!-- salad -->
+                <TextView
+                    android:id="@+id/selengkapnya2"
+                    android:layout_width="217dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:gravity="top"
+                    android:text="Energizing Yoga Flow"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
